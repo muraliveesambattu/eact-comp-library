@@ -1,8 +1,8 @@
 {
-  "name": "@soulweblab/my-library",
-  "version": "0.1.1",
+  "name": "@vmurali100/josys-button",
+  "version": "0.1.4",
   "description": "This library is made by a Button and a Map components.",
-  "author": "Soulweb Lab",
+  "author": "murali",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

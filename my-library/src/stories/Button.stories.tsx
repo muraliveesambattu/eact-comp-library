@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 import Button from "../components/Button";
 
@@ -11,16 +11,19 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "Default button",
+  label: "Add",
   style: {
-    padding: "20px",
-    width: "20em",
+    padding: "4px 8px",
     margin: "10px",
     color: "white",
-    fontSize: "19px",
+    fontSize: "0.875rem",
     cursor: "pointer",
-    border: "2px solid #fecd43",
-    background: "#fecd43",
+    border: "none",
+    borderRadius: "4px",
+    lineHeight: "1.75",
+    background: "#0C6CFC",
+    minWidth: "64px",
+    fontWeight: "700"
   },
   onClick: () => {
     console.log("You clicked the Default button");
