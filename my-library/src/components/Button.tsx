@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Button as MainButton} from '@mui/material';
 
 type ButtonStyle = {
   [property: string]: string;
@@ -12,7 +13,8 @@ export interface ButtonProps {
 
 const Button: React.FunctionComponent<ButtonProps> = ({ label, style, onClick }) => {
   return (
-    <button style={style} onClick={onClick}>{label}</button>
+    <MainButton onClick={onClick}>{label}</MainButton>
+    // <button style={style} onClick={onClick}>{label}</button>
   );
 };
 
