@@ -1,15 +1,15 @@
 How to Use this Library 
 
-# Step 1.  install our library in React Application
-npm i @vmurali100/josys-button
+#### Step 1.  install our library in React Application
+<pre>npm i @vmurali100/josys-button </pre>
 
-# Step 2. Import  as following in React Component wherever it is required
+#### Step 2. Import  as following in React Component wherever it is required
 
-import { Button } from '@vmurali100/josys-button'
+<pre>import { Button } from '@vmurali100/josys-button'</pre>
 
-# Step 3. Create required Props as follows 
+#### Step 3. Create required Props as follows 
 
- const args = {
+<pre> const args = {
     label: 'Add',
     style: {
       padding: '4px 8px',
@@ -24,9 +24,18 @@ import { Button } from '@vmurali100/josys-button'
       minWidth: '64px',
       fontWeight: `'700'`,
     },
-    onClick: handleClick,
+    onClick: ()=>{},
   }
+</pre>
+  #### Step 4. Use Imported Component as React Components as follows
+  
+  <pre>
+      < Button
+            label={args.label}
+            style={args.style}
+            onClick={args.onClick}
+          />
+  </pre>
 
-  # Step 4. Use Imported Component as Follows
 
-  <Button label={args.label} style={args.style} onClick={args.onClick} />
+
